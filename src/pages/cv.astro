@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';import {identity,pathTo} from '../config';
+---
+<Base title="Curriculum | Francesco Custureri"><section class="page-hero wrap"><p class="eyebrow">PROFILE / CURRICULUM</p><h1>Esperienza <em>e percorso.</em></h1><p>Il mio curriculum professionale e le principali aree di competenza.</p>{identity.cvFile ? <a class="button primary" href={pathTo(identity.cvFile)} download>Scarica il CV PDF ↓</a> : <p class="notice">Il CV PDF verrà aggiunto dopo aver caricato il documento definitivo.</p>}</section><section class="section wrap prose"><h2>Competenze</h2><p>Intelligenza artificiale · Machine Learning · Infrastrutture digitali · Analisi dei dati · Innovazione.</p><h2>Esperienze e formazione</h2><p>Sezione pronta per i contenuti del curriculum definitivo. Nessuna esperienza o certificazione è stata inventata.</p></section></Base>

@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/Base.astro';import ArticleCard from '../../components/ArticleCard.astro';import { getCollection } from 'astro:content';const articles=(await getCollection('articles',({data})=>!data.draft)).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+---
+<Base title="Articoli | Francesco Custureri"><section class="page-hero wrap"><p class="eyebrow">WRITING / ARTICOLI</p><h1>Idee, analisi <em>e prospettive.</em></h1><p>Approfondimenti su AI, sistemi digitali e innovazione.</p></section><section class="section wrap"><div class="articles-grid">{articles.map(a=><ArticleCard article={a}/>)}</div></section></Base>

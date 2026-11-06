@@ -1,0 +1,6 @@
+---
+import Base from '../../layouts/Base.astro';import { getCollection, render } from 'astro:content';import {pathTo} from '../../config';
+export async function getStaticPaths(){const items=await getCollection('articles',({data})=>!data.draft);return items.map(article=>({params:{slug:article.id},props:{article}}));}
+const {article}=Astro.props;const {Content}=await render(article);
+---
+<Base title={`${article.data.title} | Francesco Custureri`} description={article.data.description}><article class="post wrap"><a class="text-link" href={pathTo('articles/')}>← Tutti gli articoli</a><header><p class="eyebrow">{article.data.category} · {article.data.pubDate.toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'})}</p><h1>{article.data.title}</h1><p class="post-description">{article.data.description}</p><div class="tags">{article.data.tags.map(tag=><span>{tag}</span>)}</div></header><div class="prose"><Content/></div></article></Base>

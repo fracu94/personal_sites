@@ -1,0 +1,2 @@
+Aggiornato logo FC con doppia astina della F e richiamo al pi greco.
+Eseguire npm install e npm run dev. Se la favicon non cambia, svuotare la cache del browser.

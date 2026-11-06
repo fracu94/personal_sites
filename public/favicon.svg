@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" role="img" aria-label="Monogramma FC con F a doppia astina e ispirazione pi greco"><defs><linearGradient id="fc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#65D8FF"/><stop offset=".48" stop-color="#247CFF"/><stop offset="1" stop-color="#00B7F8"/></linearGradient></defs><g transform="translate(12 0)"><path d="M55 104 C80 67 118 62 169 65 L251 65 C267 65 280 60 292 50 C283 75 266 87 244 87 L118 87 C92 87 75 93 55 104 Z" fill="url(#fc)"/>
+<path d="M76 141 L166 141 L152 160 L63 160 Z" fill="url(#fc)"/>
+<path d="M121 88 L149 88 C139 113 130 144 118 181 C105 222 84 255 51 268 C71 238 81 210 91 175 C101 141 111 110 121 88 Z" fill="url(#fc)"/>
+<path d="M288 122 C263 100 226 103 202 126 C176 151 168 190 185 218 C201 244 239 246 269 219 L289 235 C252 274 197 273 166 242 C135 211 140 154 177 119 C210 88 259 86 301 109 Z" fill="url(#fc)"/></g></svg>

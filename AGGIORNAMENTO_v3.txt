@@ -1,0 +1,1 @@
+Aggiornamento v3: logo FC a doppia astina integrato nella homepage, favicon e navigazione; miglioramenti accessibilità e menu mobile. Contenuti dimostrativi invariati.

@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/Base.astro';import {getCollection} from 'astro:content';import {pathTo} from '../../config';const projects=await getCollection('projects',({data})=>!data.draft);
+---
+<Base title="Progetti | Francesco Custureri"><section class="page-hero wrap"><p class="eyebrow">PROJECTS / SELECTED WORK</p><h1>Ricerca, tecnologia <em>e applicazioni.</em></h1><p>Una selezione di aree progettuali e casi di studio.</p></section><section class="section wrap"><div class="projects-grid">{projects.map((p,i)=><a class="project-card" href={pathTo(`projects/${p.id}/`)}><span class="project-index">0{i+1} / PROJECT</span><div class="project-symbol">◎</div><h3>{p.data.title}</h3><p>{p.data.description}</p><div class="tags">{p.data.tags.map(t=><span>{t}</span>)}</div><span class="read-more">Approfondisci ↗</span></a>)}</div></section></Base>

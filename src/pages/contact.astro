@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';import {identity} from '../config';
+---
+<Base title="Contatti | Francesco Custureri"><section class="page-hero wrap"><p class="eyebrow">CONTACT / CONNESSIONI</p><h1>Restiamo <em>in contatto.</em></h1><p>Per confrontarci su AI, progetti e opportunità di collaborazione.</p><div class="actions">{identity.email && <a class="button primary" href={`mailto:${identity.email}`}>Scrivimi ↗</a>}{identity.linkedin && <a class="button secondary" href={identity.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>}{identity.github && <a class="button secondary" href={identity.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}{!identity.email && !identity.linkedin && !identity.github && <p class="notice">Inseriremo qui i collegamenti professionali prima della pubblicazione.</p>}</div></section></Base>
